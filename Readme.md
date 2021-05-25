@@ -1,6 +1,6 @@
 # Jupita Agent Swift SDK
 
-This SDK is developed for iOS using Swift 5.4, and utilizes ‘URLSession’ in order to create the required API call requests. This iOS SDK fully supports the 3 APIs available for Jupita Agent. All API calls are made asynchronously, thus there are event callbacks available to handle the API results
+This SDK is developed for iOS using Swift 5.4, and utilizes `URLSession` in order to create the required API call requests. This iOS SDK fully supports the 3 APIs available for Jupita Agent. All API calls are made asynchronously, thus there are event callbacks available to handle the API results
 
 ## APIs
 
@@ -15,7 +15,7 @@ There are 3 APIs within the Juptia Agent product
 
 #### Step 1
 
-Drag and drop the SDK folder ‘Jupita.framework’ into your project under ‘Frameworks, then select the framework from the ‘Targets’ menu. Make sure you have selected "Embed and sign".
+Drag and drop the SDK folder `Jupita.framework` into your project under ‘Frameworks, then select the framework from the `Targets` menu. Make sure you have selected `Embed and sign`.
 
 #### Step 2
 
@@ -23,7 +23,7 @@ Import the Jupita.framework into your class.
 
 #### Step 3
 
-Build Jupita Agent, in the example below `2` has been used to represent the `agentId;`
+Build Jupita Agent, in the example below `2` has been used to represent the `agentId`
 
 ```
 let token:String = “authentication token”; 
