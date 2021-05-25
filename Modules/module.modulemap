@@ -1,0 +1,11 @@
+framework module Jupita {
+  umbrella header "Jupita.h"
+
+  export *
+  module * { export * }
+}
+
+module Jupita.Swift {
+    header "Jupita-Swift.h"
+    requires objc
+}
