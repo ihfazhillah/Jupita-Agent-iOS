@@ -25,7 +25,7 @@ Import the Jupita.framework into your class.
 
 Build Jupita Agent, in the example below `2` has been used to represent the `agentId;`
 
-```swift
+```
 let token:String = “authentication token”; 
 let agent = Agent.init(token, "2")
 ```
@@ -34,7 +34,7 @@ let agent = Agent.init(token, "2")
 
 Call the `dump` API as a message from Agent by specifying the message and clientId – represented as '3' below;
 
-```swift
+```
 agent.dump(text: "hello", clientId: "1", type:  Agent.AGENT) { (result) -> Void in
       switch result {
       case .success(let json):
@@ -50,7 +50,7 @@ agent.dump(text: "hello", clientId: "1", type:  Agent.AGENT) { (result) -> Void 
 Similarly, call the`dump` API whenever client responds back to the same agent by specifying the message and ID of the client;
 
 
-```swift
+```
 agent.dump(text: "hi, how are you?", clientId: "1", type:  Agent.CLIENT) { (result) -> Void in
       switch result {
       case .success(let json):
@@ -67,7 +67,7 @@ agent.dump(text: "hi, how are you?", clientId: "1", type:  Agent.CLIENT) { (resu
 
 Call the `rating` API;
 
-```swift
+```
 agent.rating { (result) -> Void in
       switch result {
       case .success(let json):
@@ -84,7 +84,7 @@ agent.rating { (result) -> Void in
 
 Call the `feed` API;
 
-```swift
+```
 agent.feed { (result) -> Void in
       switch result {
       case .success(let json):
@@ -114,7 +114,7 @@ Use Step 1 and 2 so that the Jupita Agent iOS SDK is available within the scope 
 
 The available product under the iOS SDK is Jupita Agent. Jupita Agent can be constructed directly using the public constructor however it is highly recommended to use the `Agent.Init` class to build the product. This will ensure that mistakes are not made while building the iOS Jupita Agent SDK.
 
-```swift
+```
 let token:String = “your-token”; 
 let agent = Agent.init(token, "2")
 ```
@@ -123,7 +123,7 @@ let agent = Agent.init(token, "2")
 This is needed for building the ‘URLSession’ request. Next the token and agentId needs to be set.
 The built agent can now be used to call ‘dump’, `rating` and `feed` methods asynchronously. The definitions for the `dump` methods are as follows;
 
-```swift
+```
 public func dump(text: String,  clientId: String, type: Int, isCall: Bool, completionHandler: @escaping(_ result: Result<Any,Error>) -> Void?)
  
 public func dump(text: String, clientId: String, type: Int, completionHandler: @escaping(_ result: Result<Any,Error>) -> Void?)
@@ -137,7 +137,7 @@ If the values of `type` and `isCall` are not provided by default the values are 
 
 The definitions for the `rating` methods available are as follows;
 
-```swift
+```
 public func rating(completionHandler: @escaping(result: Result<Any,Error>) -> Void?)
 
 public func rating(modelName: String, completionHandler: @escaping(_ result: Result<Any,Error>) -> Void?) 
@@ -149,7 +149,7 @@ The second `rating` definition is created for future use when there will be mult
 
 The definition for the `feed` method is as follows;
 
-```swift
+```
 public func feed(completionHandler: @escaping(_ result: Result<Any,Error>) -> Void?)
 ```
 
