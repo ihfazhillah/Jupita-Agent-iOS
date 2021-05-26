@@ -35,7 +35,7 @@ let agent = Agent.init(token, "2")
 Call the `dump` API as a message from Agent by specifying the message and clientId – represented as '3' below;
 
 ```
-agent.dump(text: "hello", clientId: "1", type:  Agent.AGENT) { (result) -> Void in
+agent.dump(text: "hello", clientId: "3", type:  Agent.AGENT) { (result) -> Void in
       switch result {
       case .success(let json):
         debugPrint(json)
