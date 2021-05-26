@@ -23,7 +23,7 @@ Import the Jupita.framework into your class.
 
 #### Step 3
 
-Build Jupita Agent, in the example below `2` has been used to represent the `agentId`
+Build Jupita Agent, in the example below '2' has been used to represent the `agentId`
 
 ```
 let token:String = “authentication token”; 
