@@ -51,7 +51,7 @@ Similarly, call the`dump` API whenever client responds back to the same agent by
 
 
 ```
-agent.dump(text: "hi, how are you?", clientId: "1", type:  Agent.CLIENT) { (result) -> Void in
+agent.dump(text: "hi, how are you?", clientId: "3", type:  Agent.CLIENT) { (result) -> Void in
       switch result {
       case .success(let json):
         debugPrint(json)
