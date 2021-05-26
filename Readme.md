@@ -15,7 +15,7 @@ There are 3 APIs within the Juptia Agent product
 
 #### Step 1
 
-Drag and drop the SDK folder `Jupita.framework` into your project under ‘Frameworks', then select the framework from the `Targets` menu. Make sure you have selected `Embed and sign`.
+Drag and drop the SDK folder `Jupita.framework` into your project under ‘Frameworks', then select the framework from the `Targets` menu. Make sure you have selected 'Embed and sign'.
 
 #### Step 2
 
