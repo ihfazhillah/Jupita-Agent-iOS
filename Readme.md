@@ -121,7 +121,7 @@ let agent = Agent.init(token, "2")
 
 
 This is needed for building the `URLSession` request. Next the token and agentId needs to be set.
-The built agent can now be used to call ‘dump’, `rating` and `feed` methods asynchronously. The definitions for the `dump` methods are as follows;
+The built agent can now be used to call `dump`, `rating` and `feed` methods asynchronously. The definitions for the `dump` methods are as follows;
 
 ```
 public func dump(text: String,  clientId: String, type: Int, isCall: Bool, completionHandler: @escaping(_ result: Result<Any,Error>) -> Void?)
