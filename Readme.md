@@ -1,4 +1,4 @@
-# Jupita Agent Swift SDK
+# Jupita Agent iOS SDK
 
 This SDK is developed for iOS using Swift 5.4, and utilizes `URLSession` in order to create the required API call requests. This iOS SDK fully supports the 3 APIs available for Jupita Agent. All API calls are made asynchronously, thus there are event callbacks available to handle the API results
 
